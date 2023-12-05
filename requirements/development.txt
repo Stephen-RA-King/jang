@@ -93,13 +93,13 @@ comm==0.2.0
 commitizen==3.12.0
     # via -r development.in
 cookiecutter==2.4.0
-    # via cruft
-coverage[toml]==7.3.2
     # via
     #   -r development.in
     #   coverage-conditional-plugin
     #   pytest-cov
 coverage-conditional-plugin==0.9.0
+    # via cruft
+coverage[toml]==7.3.2
     # via -r development.in
 cruft==2.15.0
     # via -r development.in
@@ -236,13 +236,13 @@ jinja2==3.1.2
 json5==0.9.14
     # via jupyterlab-server
 jsonpointer==2.4
-    # via jsonschema
-jsonschema[format-nongpl]==4.19.2
     # via
     #   jupyter-events
     #   jupyterlab-server
     #   nbformat
 jsonschema-specifications==2023.7.1
+    # via jsonschema
+jsonschema[format-nongpl]==4.19.2
     # via jsonschema
 jupyter==1.0.0
     # via -r development.in
