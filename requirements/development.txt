@@ -61,6 +61,7 @@ certifi==2023.7.22
 cffi==1.16.0
     # via
     #   argon2-cffi-bindings
+    #   cryptography
     #   pynacl
 cfgv==3.4.0
     # via pre-commit
@@ -83,13 +84,7 @@ click==8.1.7
 colorama==0.4.6
     # via
     #   -r development.in
-    #   bandit
-    #   build
-    #   click
     #   commitizen
-    #   ipython
-    #   pytest
-    #   sphinx
     #   tox
 comm==0.2.0
     # via
@@ -98,16 +93,18 @@ comm==0.2.0
 commitizen==3.12.0
     # via -r development.in
 cookiecutter==2.4.0
+    # via cruft
+coverage[toml]==7.3.2
     # via
     #   -r development.in
     #   coverage-conditional-plugin
     #   pytest-cov
 coverage-conditional-plugin==0.9.0
-    # via cruft
-coverage[toml]==7.3.2
     # via -r development.in
 cruft==2.15.0
     # via -r development.in
+cryptography==41.0.7
+    # via secretstorage
 debugpy==1.8.0
     # via ipykernel
 decli==0.6.1
@@ -218,6 +215,10 @@ jaraco-classes==3.3.0
     # via keyring
 jedi==0.19.1
     # via ipython
+jeepney==0.8.0
+    # via
+    #   keyring
+    #   secretstorage
 jinja2==3.1.2
     # via
     #   commitizen
@@ -235,13 +236,13 @@ jinja2==3.1.2
 json5==0.9.14
     # via jupyterlab-server
 jsonpointer==2.4
+    # via jsonschema
+jsonschema[format-nongpl]==4.19.2
     # via
     #   jupyter-events
     #   jupyterlab-server
     #   nbformat
 jsonschema-specifications==2023.7.1
-    # via jsonschema
-jsonschema[format-nongpl]==4.19.2
     # via jsonschema
 jupyter==1.0.0
     # via -r development.in
@@ -271,7 +272,7 @@ jupyter-events==0.9.0
     # via jupyter-server
 jupyter-lsp==2.2.0
     # via jupyterlab
-jupyter-server==2.9.1
+jupyter-server==2.11.2
     # via
     #   jupyter-lsp
     #   jupyterlab
@@ -386,6 +387,8 @@ pbr==5.11.1
     # via stevedore
 pep8-naming==0.13.3
     # via -r development.in
+pexpect==4.9.0
+    # via ipython
 pkginfo==1.9.6
     # via twine
 platformdirs==3.11.0
@@ -411,6 +414,10 @@ prompt-toolkit==3.0.36
     #   questionary
 psutil==5.9.6
     # via ipykernel
+ptyprocess==0.7.0
+    # via
+    #   pexpect
+    #   terminado
 pure-eval==0.2.2
     # via stack-data
 pycodestyle==2.11.1
@@ -483,15 +490,6 @@ python-semantic-release==8.3.0
     # via -r development.in
 python-slugify==8.0.1
     # via cookiecutter
-pywin32==306
-    # via jupyter-core
-pywin32-ctypes==0.2.2
-    # via keyring
-pywinpty==2.0.12
-    # via
-    #   jupyter-server
-    #   jupyter-server-terminals
-    #   terminado
 pyyaml==6.0.1
     # via
     #   -r development.in
@@ -559,6 +557,8 @@ rpds-py==0.12.0
     # via
     #   jsonschema
     #   referencing
+secretstorage==3.3.3
+    # via keyring
 send2trash==1.8.2
     # via jupyter-server
 shellingham==1.5.4
